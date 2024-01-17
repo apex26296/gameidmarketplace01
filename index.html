@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game ID Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Game ID Marketplace</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>User Authentication</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+            <button onclick="signUp()">Sign Up</button>
+        </section>
+
+        <section>
+            <h2>Listing Game IDs</h2>
+            <ul id="gameList"></ul>
+            <button onclick="displayGameIDs()">Display Game IDs</button>
+        </section>
+
+        <section>
+            <h2>Messaging System</h2>
+            <label for="messageInput">Type your message:</label>
+            <input type="text" id="messageInput" placeholder="Your message">
+
+            <button onclick="sendMessage()">Send Message</button>
+        </section>
+
+        <section>
+            <h2>Review and Rating System</h2>
+            <button onclick="calculateAverageRating()">Calculate Average Rating</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Game ID Marketplace</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
